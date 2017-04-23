@@ -1,0 +1,22 @@
+{
+  "name": "devices",
+  "version": "1.0.0",
+  "description": "List devices on the local network.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appelm/v1.git"
+  },
+  "author": "Matt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appelm/v1/issues"
+  },
+  "homepage": "https://github.com/appelm/v1#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
