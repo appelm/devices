@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/static/styles/button.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='/static/js/geo.js')
+  body
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='/') Delivery Showdown
+        ul.nav.navbar-nav
+          li.active
+            a(href='/button') Button
+          li
+            a(href='/about') About
+    p#demo Click the button to get your position.
+    button(onclick='getLocation()') Try It
+    #mapholder
+    form.form-wrapper
+      input(type='text', placeholder='Search here...', required='')
+      button(type='submit') Search

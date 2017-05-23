@@ -9,6 +9,8 @@ app.set('port', process.env.PORT || 3000);
 //These are our routes... Each of these JS files contains one of our pages!
 app.use(require('./routes/index'));
 app.use(require('./routes/about'));
+app.use(require('./routes/button'));
+app.use('/static', express.static('public'));
 
 // Setup MongoDB connection?... May have to make the Database manually using some MongoDB application.
 //MongoClient.connect('mongodb://localhost:27017/app', function (err, db) {
