@@ -12,6 +12,8 @@ app.use(require('./routes/about'));
 app.use(require('./routes/button'));
 app.use('/static', express.static('public'));
 
+
+
 // Setup MongoDB connection?... May have to make the Database manually using some MongoDB application.
 //MongoClient.connect('mongodb://localhost:27017/app', function (err, db) {
   //if (err) throw err
