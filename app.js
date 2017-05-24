@@ -10,6 +10,8 @@ app.set('port', process.env.PORT || 3000);
 app.use(require('./routes/index'));
 app.use(require('./routes/about'));
 
+
+
 // Setup MongoDB connection?... May have to make the Database manually using some MongoDB application.
 //MongoClient.connect('mongodb://localhost:27017/app', function (err, db) {
   //if (err) throw err
